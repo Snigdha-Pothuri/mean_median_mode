@@ -6,7 +6,7 @@ with open("SOCR-HeightWeight.csv",newline='') as f:
 file_data.pop(0)
 new_data=[]
 for i in range(len(file_data)):
-    number=file_data[i][1]
+    number=file_data[i][2]
     new_data.append(float(number))
 n=len(new_data)
 total=0
@@ -21,7 +21,7 @@ with open("SOCR-HeightWeight.csv",newline='') as f:
 file_data.pop(0)
 new_data=[]
 for i in range(len(file_data)):
-    number=file_data[i][1]
+    number=file_data[i][2]
     new_data.append(float(number))
 n=len(new_data)
 new_data.sort()   
@@ -39,7 +39,7 @@ with open("SOCR-HeightWeight.csv",newline='') as f:
 file_data.pop(0)
 new_data=[]
 for i in range(len(file_data)):
-    number=file_data[i][1]
+    number=file_data[i][2]
     new_data.append(float(number))
 data=Counter(new_data)
 for height,occurence in data.items():
